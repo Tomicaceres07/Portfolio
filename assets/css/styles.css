@@ -38,16 +38,26 @@ nav{
     height: 0vh;
     top: 75px;
     background-color: #184074;
-    float: right;
     text-align: center;
     transition: all .5s;
 }
 
 .nav-list li{
+    display: block;
+    width: 50%;
+    float: left;
     opacity: 0;
     line-height: 30px;
-    margin: 50px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: all .5s;
+    border-bottom: 2px solid #1e236e;
+    border-right: 2px solid #1e236e;
+    border-left: 2px solid #1e236e;
+}
+
+.nav-list li:hover{
+    background-color: rgba(0,0,0,.3);
 }
 
 .nav-list li a{
@@ -57,7 +67,7 @@ nav{
 }
 
 .nav-list li a.active, .nav-list li a:hover{
-    color: #0279e5;
+    color: #38d1df;
     transition: 0.5s;
 }
 
@@ -76,7 +86,7 @@ nav{
 }
 
 #check:checked ~ .nav-list {
-    height: 100vh;
+    height: auto;
 }
 
 #check:checked ~ .nav-list li {
@@ -102,9 +112,11 @@ nav{
 
     .nav-list{
         position: relative;
+        display: flex;
         height: 100px;
         top: 0;
         background: none;
+        justify-content: flex-end;
         float: right;
         text-align: right;
         margin-right: 25px;
@@ -112,16 +124,20 @@ nav{
     }
 
     .nav-list li {
-        display: inline-block;
+        display: flex;
         opacity: 1;
-        line-height: 100px;
-        margin: 0 20px;
+        align-items: center;
+        width: auto;
+        line-height: 20px;
+        padding: 0 20px;
         transition: none;
+        border: none;
     }
 
     .nav-list li a.active, .nav.list li a:hover {
-        color: white;
+        color: #38d1df;
     }
+
 }
 
 /*
