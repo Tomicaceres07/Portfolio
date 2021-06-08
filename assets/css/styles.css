@@ -8,6 +8,9 @@
 
 body{
     font-family: sans-serif;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
     /* background: url('../images/logo1.png'); */
 }
 
@@ -16,7 +19,7 @@ body{
 nav{
     height: 75px;
     width: 100%;
-    background-color: #1e236e;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
 }
@@ -38,7 +41,7 @@ nav{
     width: 100%;
     height: 0vh;
     top: 75px;
-    background-color: #184074;
+    background-color: rgba(17, 64, 78, 0.5);
     text-align: center;
     transition: all .5s;
 }
@@ -53,9 +56,7 @@ nav{
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all .5s;
-    border-bottom: 2px solid #1e236e;
-    border-right: 2px solid #1e236e;
-    border-left: 2px solid #1e236e;
+    border: 2px solid black;
 }
 
 .nav-list li:hover{
@@ -97,7 +98,7 @@ nav{
 
 /* MAIN */
 #first-main{
-    background-color: rgb(31, 29, 29);
+    /* background-color: rgb(31, 29, 29); */
     padding-bottom: 120px;
 }
 
@@ -150,10 +151,25 @@ nav{
     line-height: 23px;
 }
 
+.button{
+    padding: 14px;
+    border: 5px solid black;
+    background-color: #38d1df;
+    font-weight: 700;
+    border-radius: 40%;
+}
+
+.button-cv{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .container-projects{
     display: flex;
     width: 100%;
     height: 100%;
+    background-color: rgb(216, 224, 224);
 }
 
 #img-project1{
@@ -161,6 +177,17 @@ nav{
     margin: auto;
     margin-top: 40px;
     width: 80%;
+}
+
+.container-contact{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(170, 118, 118);
+}
+
+.whatsapp{
+    width: 18px;
 }
 
 /* FOOTER */
