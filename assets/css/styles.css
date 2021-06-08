@@ -8,6 +8,7 @@
 
 body{
     font-family: sans-serif;
+    /* background: url('../images/logo1.png'); */
 }
 
 /* NAV BAR */
@@ -92,6 +93,73 @@ nav{
 #check:checked ~ .nav-list li {
     opacity: 1;
 }
+
+/* MAIN */
+#first-main{
+    background-color: rgb(31, 29, 29);
+    padding-bottom: 120px;
+}
+
+.container-pic{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.white{
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+#name{
+    text-align: center;
+    color: rgb(56, 160, 30);
+}
+
+.container-about{
+    background-color: #202e41;
+    color: white;
+    height: auto;
+    padding: 44px;
+}
+
+#about-h2{
+    margin-bottom: 20px;
+}
+
+#about-h3{
+    margin-bottom: 20px;
+}
+
+#about-p{
+    line-height: 23px;
+}
+
+#profile_picture{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+footer{
+    background: #1e236e;
+    color: white;
+    height: auto;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
 
 @media (min-width:768px){ /*Es el tamaño aproximado para tablet*/
     .logo-container{
