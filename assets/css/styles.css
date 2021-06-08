@@ -8,15 +8,15 @@
 
 body{
     font-family: sans-serif;
-    background-color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    /* background: url('../images/logo1.png'); */
+    /* background-color: black; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    background: url('../images/background.jpg');
 }
 
 /* NAV BAR */
 
-nav{
+#nav{
     height: 75px;
     width: 100%;
     background-color: transparent;
@@ -64,7 +64,7 @@ nav{
 }
 
 .nav-list li a{
-    color: white;
+    color: rgb(241, 234, 234);
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -77,11 +77,37 @@ nav{
 .icon-menu{
     display: block;
     font-size: 45px;
-    color: white;
+    color: rgb(241, 234, 234);
     float: right;
     margin-top: 10px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.spin-open{
+    animation: spin-open .5s linear;
+}
+
+.spin-close{
+    animation: spin-close .5s linear;
+}
+
+@keyframes spin-open {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin-close {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 #check {
@@ -117,7 +143,7 @@ nav{
 }
 
 .white{
-    color: white;
+    color: rgb(241, 234, 234);
     margin-top: 10px;
     text-align: center;
     font-size: 21px;
@@ -132,9 +158,10 @@ nav{
     color: rgb(56, 160, 30);
 }
 
+/* About */
+
 .container-about{
-    background-color: #202e41;
-    color: white;
+    background-color: rgb(241, 234, 234);
     height: auto;
     padding: 44px;
 }
@@ -165,11 +192,13 @@ nav{
     margin-top: 20px;
 }
 
+/* Projects */
+
 .container-projects{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgb(216, 224, 224);
+    background-color: rgb(241, 234, 234);
 }
 
 #img-project1{
@@ -183,7 +212,7 @@ nav{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgb(170, 118, 118);
+    background-color: rgb(241, 234, 234);
 }
 
 .whatsapp{
@@ -193,8 +222,8 @@ nav{
 /* FOOTER */
 
 footer{
-    background: #1e236e;
-    color: white;
+    background: #3a3a3b;
+    color: rgb(241, 234, 234);
     height: auto;
     padding: 10px 0px;
     text-align: center;
