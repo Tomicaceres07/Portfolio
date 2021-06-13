@@ -3,105 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
     <link rel="stylesheet" href="assets/fontello/css/fontello.css">
     <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Tomas Caceres</title>
-    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <header>
-        <nav id="nav">
-            <div class="logo-container">
-                <a href="#">
-                    <img class="logo" src="assets/images/logo2.png" alt="Logo TC">
+        <nav id="nav" class="navbar navbar-dark navbar-expand-md background-nav fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
                 </a>
+
+                <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="icon-menu"></label>
-            <ul class="nav-list">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
         </nav>
     </header>
     <main>
-        <div id="first-main">
-            <div class="container-pic">
-                <img id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
-            </div>
-            <p class="white mb">Hi! I'm</p>
-            <h1 id="name">Tomas Caceres</h1>
-            <p class="white">Frontend Developer</p>
-        </div>
-        <div class="container-about">
-            <h2 id="about-h2">About</h2>
-            <div id="about-one">
-                <h3 id="about-h3">Who am I? I'm Tomas Caceres, Web Developer.</h3>
-                <p id="about-p">I am Tomas Caceres, a web developer eager to learn something new every day. I love technology and constant advancement. I am looking for a job which can exploit my potential to keep improving.</p>
-                <button class="button button-cv" type="button">Download CV</button>
-            </div>
-        </div>
-        <div class="container-projects">
-            <div>
-                <h2>Projects</h2>
-                <div class="project1">
-                    <img id="img-project1" src="./assets/images/laptop.png" alt="Laptop with project">
-                    <h3 id="project1-h3">Project 1</h3>
-                    <p>Tehnologies:</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <button type="button" class="button"><span class="icon-globe"></span> View Project</button>
-                    <button type="button" class="button"><span class="icon-github-circled"></span> Repository</button>
-                </div>
-                <div class="project1">
-                    <img id="img-project1" src="./assets/images/laptop.png" alt="Laptop with project">
-                    <h3 id="project1-h3">Project 2</h3>
-                    <p>Tehnologies:</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <button type="button" class="button"><span class="icon-globe"></span> View Project</button>
-                    <button type="button" class="button"><span class="icon-github-circled"></span> Repository</button>
-                </div>
-                <div class="project1">
-                    <img id="img-project1" src="./assets/images/laptop.png" alt="Laptop with project">
-                    <h3 id="project1-h3">Project 3</h3>
-                    <p>Tehnologies:</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                    </ul>
-                    <button type="button" class="button"><span class="icon-globe"></span> View Project</button>
-                    <button type="button" class="button"><span class="icon-github-circled"></span> Repository</button>
+        <section id="home">
+            <div class="container">
+                <div class="row vh-100">
+                    <div class="col-12 align-self-end text-center mb-5">
+                        <img class="rounded-circle w-75" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="col-12 align-self-start text-center">
+                        <h3 class="text-white">Hi! I'm</h3>
+                        <h1 class="text-primary">Tomas Caceres</h1>
+                        <h3 class="text-white">Frontend Developer</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-contact">
-            <h3>Contact</h3>
-            <ul>
-                <li>Via <a href="#">Email <img src="./assets/images/mail.png" alt="Mail"></a></li>
-                <li>Via <a href="#">Phone <img src="./assets/images/phone.png" alt="Mail"></a></li>
-                <li>Via <a href="#">Instagram <img src="./assets/images/instagram.png" alt="Mail"></a></li>
-                <li>Via <a href="#">Whatsapp <img class="whatsapp" src="./assets/images/whatsapp.png" alt="Mail"></a></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col px-5 mt-3">
+                        <h2>About</h2>
+                        <hr>
+                        <h3>Who am I? <br> I'm Tomas Caceres, Web Developer.</h3>
+                        <p>I am Tomas Caceres, a web developer eager to learn something new every day. I love technology and constant advancement. I am looking for a job which can exploit my potential to keep improving.</p>
+                        <button class="btn btn-primary" type="button">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col px-5">
+                        <hr>
+                        <h2>Projects</h2>
+                        <img class="w-75 d-block mx-auto" src="./assets/images/laptop.png" alt="Laptop with project">
+                        <h3>Project 1</h3>
+                        <p>Short description</p>
+                        <p>Technologies:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary"><span class="icon-globe"></span> View Project</button>
+                        <button type="button" class="btn btn-secondary"><span class="icon-github-circled"></span> Repository</button>
+                    </div>
+                    <div class="col px-5">
+                        <hr>
+                        <img class="w-75 d-block mx-auto" src="./assets/images/laptop.png" alt="Laptop with project">
+                        <h3>Project 2</h3>
+                        <p>Short description</p>
+                        <p>Technologies:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary"><span class="icon-globe"></span> View Project</button>
+                        <button type="button" class="btn btn-secondary"><span class="icon-github-circled"></span> Repository</button>
+                    </div>
+                    <div class="col px-5">
+                        <hr>
+                        <img class="w-75 d-block mx-auto" src="./assets/images/laptop.png" alt="Laptop with project">
+                        <h3>Project 3</h3>
+                        <p>Short description</p>
+                        <p>Technologies:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary"><span class="icon-globe"></span> View Project</button>
+                        <button type="button" class="btn btn-secondary"><span class="icon-github-circled"></span> Repository</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col px-5 pb-5">
+                        <h2>Contact</h2>
+                        <div class="row">
+                            <div class="col-12 my-4">
+                                <a href="#" class="btn btn-outline-danger"><img src="./assets/images/gmail.svg" alt="Mail Icon" width="16"> Email</a>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <a href="#" class="btn btn-outline-success"><img src="./assets/images/whatsapp.svg" alt="Whatsapp Icon" width="16"> Whatsapp</a>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <a href="#" class="btn btn-outline-info"><img src="./assets/images/telegram.svg" alt="Telegram Icon" width="16"> Telegram</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col px-5">
+                        <a href="#" class="btn btn-info"><img src="./assets/images/gmail.svg" alt="Mail Icon" width="16"> Email</a>
+                    </div>
+                    <div class="col px-5">
+                        <a href="#" class="btn btn-info"><img src="./assets/images/whatsapp.svg" alt="Whatsapp Icon" width="16"> Whatsapp</a>
+                    </div>
+                    <div class="col px-5">
+                        <a href="#" class="btn btn-info"><img src="./assets/images/telegram.svg" alt="Telegram Icon" width="16"> Telegram</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="bg-dark p-2 text-white text-center">
         <p>All Rights Reserved &copy; 2021.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./js/popper/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
