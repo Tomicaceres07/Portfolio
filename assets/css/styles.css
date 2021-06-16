@@ -1,3 +1,9 @@
+/* main{
+    background-color: $terciary;
+} */
+hr {
+  border-top: 1px solid #94c7f6; }
+
 .background-nav {
   background-color: transparent !important;
   -webkit-transition: all .5s;
@@ -8,11 +14,15 @@
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
+#toggle {
+  border: 1px solid white; }
+
 #home {
   background-image: url("../images/background-code.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 10%; }
+  background-size: cover;
+  background-position: 7%; }
 
 #home:before {
   content: "";
@@ -21,7 +31,36 @@
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute; }
 
-#toggle {
-  border: 1px solid white; }
+.text-primary {
+  color: #2940D3 !important; }
+
+.bg-black {
+  background-color: #232323; }
+
+.btn {
+  width: 10em;
+  text-align: center; }
+
+.btn-contact {
+  width: 70px;
+  border: 3px solid #94c7f6; }
+
+.btn-primary {
+  background-color: #2940D3; }
+
+.btn-secondary {
+  background-color: #3a4346; }
+
+.card {
+  border: 1px solid rgba(148, 199, 246, 0.4); }
+
+.technology {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px; }
 
 /*# sourceMappingURL=styles.css.map */

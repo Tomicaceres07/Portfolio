@@ -1,3 +1,15 @@
+$black: #232323;
+$primary: #2940D3;
+$secondary: #3a4346;
+$terciary: #94c7f6;
+
+/* main{
+    background-color: $terciary;
+} */
+
+hr{
+    border-top: 1px solid $terciary;
+}
 
 .background-nav{
     background-color: transparent!important;
@@ -9,12 +21,16 @@
     transition: all .5s ease;
 }
 
+#toggle{
+    border: 1px solid white;
+}
+
 #home{
     background-image: url("../images/background-code.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 10%;
-    // background-size: 100%;
+    background-size: cover;
+    background-position: 7%;
     // background-repeat: repeat-y;
 }
 
@@ -26,6 +42,39 @@
     position: absolute;
 }
 
-#toggle{
-    border: 1px solid white;
+.text-primary{
+    color: $primary!important;
 }
+
+.bg-black{
+    background-color: $black;
+}
+
+.btn{
+    width: 10em;
+    text-align: center;
+}
+
+.btn-contact{
+    width: 70px;
+    border: 3px solid $terciary;
+}
+
+.btn-primary{
+    background-color: $primary;
+}
+
+.btn-secondary{
+    background-color: $secondary;
+}
+
+.card{
+    border: 1px solid rgba(148, 199, 246, 0.4);
+}
+
+.technology{
+    display: inline-flex;
+    justify-content: center;
+    width: 35px;
+}
+

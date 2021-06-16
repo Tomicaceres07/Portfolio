@@ -23,6 +23,12 @@
       "css": "globe",
       "code": 59392,
       "src": "fontawesome"
+    },
+    {
+      "uid": "mj2pxhfj0eumtbzirpdokhtzk00480uo",
+      "css": "up-2",
+      "code": 59395,
+      "src": "typicons"
     }
   ]
 }
