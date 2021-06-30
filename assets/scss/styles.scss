@@ -3,6 +3,10 @@ $primary: #2940D3;
 $secondary: #3a4346;
 $terciary: #94c7f6;
 
+html {
+    scroll-behavior: smooth;
+}
+
 hr{
     border-top: 1px solid $terciary;
 }

@@ -2,6 +2,8 @@ $(document).ready(function(){
 
     let scroll = window.pageYOffset;
 
+    $('.technology').tooltip();
+
     $(window).scroll(function(){
         let actual_scroll = window.pageYOffset;
         jq_home_height = $("#home").height();
@@ -35,16 +37,23 @@ $(document).ready(function(){
         let home_height = home.getBoundingClientRect().bottom;
         let about_height = about.getBoundingClientRect().top;
         let portfolio_height = portfolio.getBoundingClientRect().top;
-        let contact_height = contact.getBoundingClientRect().top;
+        let contact_height = contact.getBoundingClientRect().bottom;
 
+        console.log(home_height);
         if(home_height >= 110){
             $('#li_home').addClass('active').siblings().removeClass('active');
         }
         if (about_height <= 0) {
             $('#li_about').addClass('active').siblings().removeClass('active');
+            if ($('#li_about').hasClass('active')) {
+                // console.log("TENGO LA CLASE ACTIVE")
+            }
         }
         if (portfolio_height <= 0) {
             $('#li_portfolio').addClass('active').siblings().removeClass('active');
+            if ($('#li_portfolio').hasClass('active')) {
+                // console.log("TENGO LA CLASE ACTIVE")
+            }
         }
         if (contact_height <= window_height) {
             $('#li_contact').addClass('active').siblings().removeClass('active');
