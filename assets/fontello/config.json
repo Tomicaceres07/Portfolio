@@ -29,6 +29,12 @@
       "css": "up-2",
       "code": 59395,
       "src": "typicons"
+    },
+    {
+      "uid": "1c4068ed75209e21af36017df8871802",
+      "css": "down-2",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }

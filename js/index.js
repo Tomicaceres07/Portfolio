@@ -28,6 +28,8 @@ $(document).ready(function(){
         scroll = actual_scroll;
 
         let window_height = window.innerHeight;
+        let window_one_third = window.innerHeight / 1.3;
+
 
         let home = document.getElementById('home');
         let about = document.getElementById('about');
@@ -38,25 +40,37 @@ $(document).ready(function(){
         let about_height = about.getBoundingClientRect().top;
         let portfolio_height = portfolio.getBoundingClientRect().top;
         let contact_height = contact.getBoundingClientRect().bottom;
+        let contact_height_top = contact.getBoundingClientRect().top;
 
-        console.log(home_height);
+        // HOME
         if(home_height >= 110){
             $('#li_home').addClass('active').siblings().removeClass('active');
         }
+
+        // ABOUT
         if (about_height <= 0) {
             $('#li_about').addClass('active').siblings().removeClass('active');
-            if ($('#li_about').hasClass('active')) {
-                // console.log("TENGO LA CLASE ACTIVE")
-            }
         }
+        if (window_one_third >= about_height) {
+            $('#row-about').addClass('animate__animated animate__fadeInDown');
+        }
+
+        // PORTFOLIO
         if (portfolio_height <= 0) {
             $('#li_portfolio').addClass('active').siblings().removeClass('active');
-            if ($('#li_portfolio').hasClass('active')) {
-                // console.log("TENGO LA CLASE ACTIVE")
-            }
         }
+        if (window_one_third >= portfolio_height) {
+            $('.row-portfolio').addClass('animate__animated animate__fadeIn');
+        }
+
+        // CONTACT
         if (contact_height <= window_height) {
             $('#li_contact').addClass('active').siblings().removeClass('active');
+        }
+        console.log('woh '+window_one_third);
+        console.log('ch '+contact_height);
+        if (window_one_third >= contact_height_top) {
+            $('.row-contact').addClass('animate__animated animate__fadeInUp');
         }
 
     });
@@ -65,6 +79,13 @@ $(document).ready(function(){
     $('#up').on('click', function(){
         $('html, body').animate({
             scrollTop: 0
+        }, 500);
+    });
+
+    let about_height = about.getBoundingClientRect().top;
+    $('#down').on('click', function(){
+        $('html, body').animate({
+            scrollTop: about_height
         }, 500);
     });
 

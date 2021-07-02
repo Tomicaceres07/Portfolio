@@ -46,6 +46,25 @@ hr{
     width: 240px;
 }
 
+#logo:hover{
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.nav-item:hover{
+    font-size: 17px;
+    transition: all .5s;
+}
+
+.effect{
+    opacity: 0;
+}
+
+.normal{
+    opacity: 1!important;
+    transition: all .5s;
+}
+
 .text-primary{
     color: $primary!important;
 }
@@ -63,6 +82,11 @@ hr{
     width: 5em!important;
     border: 3px solid $terciary;
     max-width: 100%;
+}
+
+.btn-contact:hover{
+    background-color: #3a4346;
+    transition: all .5s;
 }
 
 .btn-primary{
@@ -83,8 +107,14 @@ hr{
     width: 35px;
 }
 
-#arrow_up{
+#arrow_up,
+#arrow_down{
     font-size: 1.5em;
+}
+
+#down{
+    position: relative;
+    top: 3em;
 }
 
 @media (min-width: 576px){
@@ -107,6 +137,11 @@ hr{
         display: block;
         margin: auto 0px;
         font-size: 18px;
+    }
+
+    #down{
+        position: relative;
+        top: 7em;
     }
 }
 

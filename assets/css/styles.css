@@ -35,6 +35,25 @@ hr {
   max-width: 100%;
   width: 240px; }
 
+#logo:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
+
+.nav-item:hover {
+  font-size: 17px;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.effect {
+  opacity: 0; }
+
+.normal {
+  opacity: 1 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
 .text-primary {
   color: #2940D3 !important; }
 
@@ -49,6 +68,11 @@ hr {
   width: 5em !important;
   border: 3px solid #94c7f6;
   max-width: 100%; }
+
+.btn-contact:hover {
+  background-color: #3a4346;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
 
 .btn-primary {
   background-color: #2940D3; }
@@ -68,8 +92,13 @@ hr {
           justify-content: center;
   width: 35px; }
 
-#arrow_up {
+#arrow_up,
+#arrow_down {
   font-size: 1.5em; }
+
+#down {
+  position: relative;
+  top: 3em; }
 
 @media (min-width: 576px) {
   #text-home {
@@ -85,7 +114,11 @@ hr {
   #text-home {
     display: block;
     margin: auto 0px;
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  #down {
+    position: relative;
+    top: 7em; } }
 @media (min-width: 992px) {
   #text-home {
     font-size: 24px; }

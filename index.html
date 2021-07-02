@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav id="nav" class="navbar navbar-dark navbar-expand-md background-nav fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid text-center animate__animated animate__fadeInDown">
                 <a id="logo" href="#home" class="navbar-brand">
                     <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
                 </a>
@@ -41,20 +41,26 @@
         <section id="home">
             <div class="container">
                 <div class="row vh-100 align-content-center">
-                    <div class="col-12 col-md-6 text-center mb-5">
+                    <!-- Foto -->
+                    <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
                         <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
                     </div>
-                    <div id="text-home" class="col-12 col-md-6 text-center">
+                    <!-- Textos -->
+                    <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
                         <h3 class="text-white">Hi! I'm</h3>
-                        <h1 class="text-primary">Tomas Caceres</h1>
+                        <h1 class="text-primary ">Tomas Caceres</h1>
                         <h3 class="text-white">Frontend Developer</h3>
+                    </div>
+                    <!-- Botón para ir al about -->
+                    <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
+                        <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="container">
-                <div class="row">
+                <div id="row-about" class="row effect">
                     <div class="col-12 px-5 mt-3">
                         <h2>About</h2>
                         <hr>
@@ -68,12 +74,12 @@
         </section>
         <section id="portfolio">
             <div class="container">
-                <div class="row">
+                <div class="row effect row-portfolio">
                     <div class="col px-5">
                         <h2>Projects</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row effect row-portfolio">
                     <div class="col px-5">
                         <div class="card my-3">
                             <img src="https://via.placeholder.com/1440x900" class="card-img-top" alt="Project 1">
@@ -130,7 +136,7 @@
         </section>
         <section id="contact">
             <div class="container">
-                <div class="row">
+                <div class="row effect row-contact">
                     <div class="col-12 px-5">
                         <h2 class="mb-4">Contact</h2>
                         <div class="row my-4">
@@ -159,7 +165,7 @@
                     <p class="d-block m-0 m-sm-auto p-2 pb-1">All Rights Reserved &copy; 2021.</p>
                 </div>
                 <div class="col-12 col-sm-4 order-first order-sm-last">
-                    <a id="up" href="#home" class="d-block w-25 mx-auto p-1 animate__animated animate__pulse animate__infinite"><span id="arrow_up" class="icon-up-2 bg-white border rounded-circle "></span></a>
+                    <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
                 </div>
             </div>
         </div>
