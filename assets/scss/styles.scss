@@ -3,8 +3,12 @@ $primary: #2940D3;
 $secondary: #3a4346;
 $terciary: #94c7f6;
 
-html {
+/* html {
     scroll-behavior: smooth;
+} */
+
+body{
+    overflow-x: hidden;
 }
 
 hr{
@@ -20,6 +24,7 @@ hr{
     background-color: rgba(0, 0, 0, 0.8)!important;
     transition: all .5s ease;
 }
+
 
 #toggle{
     border: 1px solid white;
@@ -58,11 +63,6 @@ hr{
 
 .effect{
     opacity: 0;
-}
-
-.normal{
-    opacity: 1!important;
-    transition: all .5s;
 }
 
 .text-primary{

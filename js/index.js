@@ -8,12 +8,12 @@ $(document).ready(function(){
         let actual_scroll = window.pageYOffset;
         jq_home_height = $("#home").height();
         half_height = jq_home_height/2;
-        nav = $("#nav");
-        if (nav.offset().top > (half_height)) {
+        // nav = $("#nav");
+        /* if (nav.offset().top > (half_height)) {
             nav.addClass('background-rgba');
         }else{
             nav.removeClass('background-rgba');
-        }
+        } */
         aria_expanded = document.getElementById('toggle').getAttribute('aria-expanded');
         if (scroll >= actual_scroll) {
             document.getElementById('nav').style.top = '0';

@@ -1,5 +1,8 @@
-html {
-  scroll-behavior: smooth; }
+/* html {
+    scroll-behavior: smooth;
+} */
+body {
+  overflow-x: hidden; }
 
 hr {
   border-top: 1px solid #94c7f6; }
@@ -48,11 +51,6 @@ hr {
 
 .effect {
   opacity: 0; }
-
-.normal {
-  opacity: 1 !important;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
 
 .text-primary {
   color: #2940D3 !important; }
