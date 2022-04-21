@@ -8,12 +8,12 @@ $(document).ready(function(){
         let actual_scroll = window.pageYOffset;
         jq_home_height = $("#home").height();
         half_height = jq_home_height/2;
-        // nav = $("#nav");
-        /* if (nav.offset().top > (half_height)) {
+        nav = $("#nav");
+        if (nav.offset().top > (half_height)) {
             nav.addClass('background-rgba');
         }else{
             nav.removeClass('background-rgba');
-        } */
+        }
         aria_expanded = document.getElementById('toggle').getAttribute('aria-expanded');
         if (scroll >= actual_scroll) {
             document.getElementById('nav').style.top = '0';
@@ -67,8 +67,8 @@ $(document).ready(function(){
         if (contact_height <= window_height) {
             $('#li_contact').addClass('active').siblings().removeClass('active');
         }
-        console.log('woh '+window_one_third);
-        console.log('ch '+contact_height);
+        // console.log('woh '+window_one_third);
+        // console.log('ch '+contact_height);
         if (window_one_third >= contact_height_top) {
             $('.row-contact').addClass('animate__animated animate__fadeInUp');
         }
@@ -83,6 +83,8 @@ $(document).ready(function(){
     });
 
     let about_height = about.getBoundingClientRect().top;
+    // console.log(about_height);
+
     $('#down').on('click', function(){
         $('html, body').animate({
             scrollTop: about_height
