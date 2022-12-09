@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
 }
 
+.no-scroll-y {
+    overflow-y: hidden;
+}
+
 hr{
     border-top: 1px solid $terciary;
 }
@@ -21,14 +25,23 @@ hr{
 }
 
 .background-rgba{
-    background-color: rgba(0, 0, 0, 0.8)!important;
+    background-color: rgba(0, 0, 0, 0.9)!important;
     transition: all .5s ease;
 }
-
 
 #toggle{
     border: 1px solid white;
 }
+
+.nav-item {
+    border-bottom: 1px solid white;
+}
+
+#li_contact {
+    border: none;
+}
+
+// Home
 
 #home{
     background-image: url("../images/background-code.jpg");
@@ -137,6 +150,10 @@ hr{
         display: block;
         margin: auto 0px;
         font-size: 18px;
+    }
+
+    .nav-item {
+        border: none;
     }
 
     #down{

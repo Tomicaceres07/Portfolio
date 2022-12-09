@@ -14,10 +14,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 </head>
-<body>
-    <!-- A ver si anda -->
+<body id="body">
     <header>
-        <nav id="nav" class="navbar navbar-dark navbar-expand-md background-nav fixed-top background-rgba">
+        <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
             <div class="container-fluid text-center animate__animated animate__fadeInDown">
                 <a id="logo" href="#home" class="navbar-brand">
                     <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
@@ -27,12 +26,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse " id="menu">
-                    <ul id="menu-list" class="navbar-nav ml-auto h-100 ">
-                        <li id="li_home" class="nav-item active"><a id="a_home" class="nav-link" href="#home">Inicio</a></li>
-                        <li id="li_about" class="nav-item"><a id="a_about" class="nav-link" href="#about">Sobre Mi</a></li>
-                        <li id="li_portfolio" class="nav-item"><a id="a_portfolio" class="nav-link" href="#portfolio">Proyectos</a></li>
-                        <li id="li_contact" class="nav-item"><a id="a_contact" class="nav-link" href="#contact">Contacto</a></li>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul id="menu-list" class="navbar-nav ml-auto">
+                        <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Inicio</a></li>
+                        <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">Sobre Mi</a></li>
+                        <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Proyectos</a></li>
+                        <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,14 +82,31 @@
                 <div class="row effect row-portfolio">
                     <div class="col px-5">
                         <div class="card my-3">
-                            <img src="./assets/images/Proyecto 1.png" class="card-img-top" alt="Project 1">
+                            <img src="./assets/images/Liceo Project.png" class="card-img-top" alt="Proyecto Liceo">
+                            <div class="card-body">
+                                <h5 class="card-title">Aplicación Web LMGP</h5>
+                                <p class="card-text">Es una aplicación pensada para el colegio Liceo Militar General Paz de Córdoba y busca facilitar la comunicación de Alumnos, Profesores y Directores.</p>
+                                <p>Tecnologías:</p>
+                                <ul class="w-75 p-0 d-flex justify-content-around">
+                                    <img class="technology" data-toggle="tooltip" title="React" src="./assets/images/react.svg" alt="React Icon">
+                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                    <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
+                                </ul>
+                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Portafolio" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col px-5">
+                        <div class="card my-3">
+                            <img src="./assets/images/Portfolio Project.png" class="card-img-top" alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">Portafolio</h5>
                                 <p class="card-text">Es esta misma página. Muestro quién soy, qué proyectos hice y cómo me pueden contactar.</p>
                                 <p>Tecnologías:</p>
                                 <ul class="w-75 p-0 d-flex justify-content-around">
                                     <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML Icon">
-                                    <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="HTML Icon">
+                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 4" src="./assets/images/bootstrap-4.svg" alt="Bootstrap 4 Icon">
+                                    <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
                                     <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="HTML Icon">
                                 </ul>
                                 <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Portafolio" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
@@ -99,7 +115,23 @@
                     </div>
                     <div class="col px-5">
                         <div class="card my-3">
-                            <img src="./assets/images/Proyecto 2.png" class="card-img-top" alt="Project 1">
+                            <img src="./assets/images/Oniet Project.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">HotSpot - ONIET</h5>
+                                <p class="card-text">Es esta misma página. Muestro quién soy, qué proyectos hice y cómo me pueden contactar.</p>
+                                <p>Tecnologías:</p>
+                                <ul class="w-75 p-0 d-flex justify-content-around">
+                                    <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML Icon">
+                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                    <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="HTML Icon">
+                                </ul>
+                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/TomasMedeot/Oniet" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 px-5">
+                        <div class="card my-3">
+                            <img src="./assets/images/Form Project.png" class="card-img-top" alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">Survey Form</h5>
                                 <p class="card-text">Formulario con una encuesta sobre Free Code Camp.</p>
@@ -114,9 +146,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col px-5">
+                    <div class="col col-md-6 col-lg-4 px-5">
                         <div class="card my-3">
-                            <img src="./assets/images/Proyecto 3.png" class="card-img-top" alt="Project 1">
+                            <img src="./assets/images/Tribute Project.png" class="card-img-top" alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">Tribute Page</h5>
                                 <p class="card-text">Página tributo a Dr. Norman Borlaug, el hombre que salvó billones de personas.</p>
