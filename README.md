@@ -1,4 +1,4 @@
-# Portafolio
-Este portafolio ha sido creado con HTML, CSS, JS, jQuery y SASS por Tomás Caceres.
+# Portfolio
+This portfolio has been developed with HTML, CSS, JS, jQuery and SASS by Tomás Caceres.
 ***
-Para ver el resultado, hacer click en este [link](https://tomas-caceres.netlify.app).
+To see the result, click in this [link](https://tomas-caceres.netlify.app).

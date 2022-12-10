@@ -15,193 +15,403 @@
     />
 </head>
 <body id="body">
-    <header>
-        <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
-            <div class="container-fluid text-center animate__animated animate__fadeInDown">
-                <a id="logo" href="#home" class="navbar-brand">
-                    <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
-                </a>
+    <div id="contentEnglish" class="content contentEnglish">
+        <header>
+            <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
+                <div class="container-fluid text-center animate__animated animate__fadeInDown">
+                    <a id="logo" href="#home" class="navbar-brand">
+                        <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
+                    </a>
 
-                <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul id="menu-list" class="navbar-nav ml-auto">
-                        <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Inicio</a></li>
-                        <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">Sobre Mi</a></li>
-                        <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Proyectos</a></li>
-                        <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contacto</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul id="menu-list" class="navbar-nav ml-auto">
+                            <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Home</a></li>
+                            <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">About Me</a></li>
+                            <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Projects</a></li>
+                            <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contact</a></li>
+                            <li class="li_language px-4">
+                                <span class="en"><img class="flag" src="./assets/images/Flag of the United States.svg" alt="USA Flag"></span>
+                                <input type="checkbox" id="check" class="check">
+                                <span class="es"><img class="flag" src="./assets/images/Flag of Spain.svg" alt="SPAIN Flag"></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="container">
+                    <div class="row vh-100 align-content-center">
+                        <!-- Foto -->
+                        <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
+                            <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                        </div>
+                        <!-- Textos -->
+                        <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
+                            <h3 class="text-white">Hi! I'm</h3>
+                            <h1 class="text-primary ">Tomás Caceres</h1>
+                            <h3 class="text-white">FullStack Developer</h3>
+                        </div>
+                        <!-- Botón para ir al about -->
+                        <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
+                            <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div id="row-about" class="row effect">
+                        <div class="col-12 px-5 mt-3">
+                            <h2>About Me</h2>
+                            <hr>
+                            <h3>Who am I?</h3>
+                            <p>I am Tomas Caceres, a web developer eager to learn something new every day. I love technology and constant advancement. I am looking for a job which can exploit my potential to keep improving.</p>
+                            <!-- TODO: Put Eng CV -->
+                            <a class="btn btn-primary d-block mx-auto" type="button" href="./assets/cv/curriculum-esp.pdf" target="_blank">Download CV</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row effect row-portfolio">
+                        <div class="col px-5">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row effect row-portfolio">
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Liceo Project.png" class="card-img-top" alt="Proyecto Liceo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Application LMGP</h5>
+                                    <p class="card-text">
+                                        It is an application designed for the Liceo Militar General Paz de Córdoba school and seeks to facilitate the communication of students, teachers and principals.</p>
+                                    <p>Technologies:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="React" src="./assets/images/react.svg" alt="React Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/AsusGho-Frontend" class="text-white text-decoration-none" target="_blank">Repository</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Portfolio Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio</h5>
+                                    <p class="card-text">It is this same page. I show who I am, what projects I did and how you can contact me.</p>
+                                    <p>Technologies:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 4" src="./assets/images/bootstrap-4.svg" alt="Bootstrap 4 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
+                                        <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Portafolio" class="text-white text-decoration-none" target="_blank">Repository</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Oniet Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">HotSpot - ONIET</h5>
+                                    <p class="card-text">
+                                        It is a system that manages clients connected to a Wi-Fi network, and with the client's data calculate statistics.</p>
+                                    <p>Technologies:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/TomasMedeot/Oniet" class="text-white text-decoration-none" target="_blank">Repository</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Form Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Survey Form</h5>
+                                    <p class="card-text">
+                                        Form with a survey about Free Code Camp.</p>
+                                    <p>Technologies:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
+                                    <a href="https://fcc-sf-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">See Project</a></button>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Survey-Form" class="text-white text-decoration-none" target="_blank">Repository</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-lg-4 px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Tribute Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tribute Page</h5>
+                                    <p class="card-text">Tribute page to Dr. Norman Borlaug, the man who saved billions of people.</p>
+                                    <p>Technologies:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
+                                    <a href="https://fcc-tp-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">See Project</a></button>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Tribute-Page" class="text-white text-decoration-none" target="_blank">Repository</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="row effect row-contact">
+                        <div class="col-12 px-5">
+                            <h2 class="mb-4">Contact</h2>
+                            <div class="row my-4">
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://github.com/Tomicaceres07" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/github.svg" alt="Github Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://www.linkedin.com/in/tomás-caceres-378a48173/" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/linkedin.svg" alt="Linkedin Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://t.me/Tomicaceres" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/telegram.svg" alt="Telegram Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="mailto:tomicaceres07@gmail.com" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/gmail.svg" alt="Mail Icon" width="30"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black p-2 text-white text-center">
             <div class="container">
-                <div class="row vh-100 align-content-center">
-                    <!-- Foto -->
-                    <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
-                        <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <p class="d-block m-0 m-sm-auto p-2 pb-1">Developed with <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                        </svg></span> by Tomás Caceres 2022.
+                        </p>
                     </div>
-                    <!-- Textos -->
-                    <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
-                        <h3 class="text-white">Hola! Yo Soy</h3>
-                        <h1 class="text-primary ">Tomás Caceres</h1>
-                        <h3 class="text-white">Desarrollador Web</h3>
-                    </div>
-                    <!-- Botón para ir al about -->
-                    <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
-                        <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
+                    <div class="col-12 col-sm-4 order-first order-sm-last">
+                        <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="about">
+        </footer>
+    </div>
+    <div id="contentSpanish" class="content contentSpanish">
+        <header>
+            <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
+                <div class="container-fluid text-center animate__animated animate__fadeInDown">
+                    <a id="logo" href="#home" class="navbar-brand">
+                        <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
+                    </a>
+
+                    <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul id="menu-list" class="navbar-nav ml-auto">
+                            <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Inicio</a></li>
+                            <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">Sobre Mi</a></li>
+                            <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Proyectos</a></li>
+                            <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contacto</a></li>
+                            <li class="li_language px-4">
+                                <span class="en"><img class="flag" src="./assets/images/Flag of the United States.svg" alt="USA Flag"></span>
+                                <input type="checkbox" id="check" class="check">
+                                <span class="es"><img class="flag" src="./assets/images/Flag of Spain.svg" alt="SPAIN Flag"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="container">
+                    <div class="row vh-100 align-content-center">
+                        <!-- Foto -->
+                        <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
+                            <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                        </div>
+                        <!-- Textos -->
+                        <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
+                            <h3 class="text-white">Hola! Yo Soy</h3>
+                            <h1 class="text-primary ">Tomás Caceres</h1>
+                            <h3 class="text-white">Desarrollador FullStack</h3>
+                        </div>
+                        <!-- Botón para ir al about -->
+                        <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
+                            <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div id="row-about" class="row">
+                        <div class="col-12 px-5 mt-3">
+                            <h2>Sobre Mi</h2>
+                            <hr>
+                            <h3>Quién soy?</h3>
+                            <p>Soy Tomás Caceres, un desarrollador web con muchas ganas de aprender algo nuevo cada día. Amo la tecnología y el avance constante. Estoy buscando un trabajo quepueda aprovechar mi potencial para seguir mejorando.</p>
+                            <a class="btn btn-primary d-block mx-auto" type="button" href="./assets/cv/curriculum-esp.pdf" target="_blank">Descargar CV</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row effect row-portfolio">
+                        <div class="col px-5">
+                            <h2>Proyectos</h2>
+                        </div>
+                    </div>
+                    <div class="row effect row-portfolio">
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Liceo Project.png" class="card-img-top" alt="Proyecto Liceo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aplicación Web LMGP</h5>
+                                    <p class="card-text">Es una aplicación pensada para el colegio Liceo Militar General Paz de Córdoba y busca facilitar la comunicación de Alumnos, Profesores y Directores.</p>
+                                    <p>Tecnologías:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="React" src="./assets/images/react.svg" alt="React Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/AsusGho-Frontend" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Portfolio Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portafolio</h5>
+                                    <p class="card-text">Es esta misma página. Muestro quién soy, qué proyectos hice y cómo me pueden contactar.</p>
+                                    <p>Tecnologías:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 4" src="./assets/images/bootstrap-4.svg" alt="Bootstrap 4 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
+                                        <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Portafolio" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Oniet Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">HotSpot - ONIET</h5>
+                                    <p class="card-text">Es un sistema que administra clientes conectados a una red wifi, y con los datos del cliente calcular estadísticas.</p>
+                                    <p>Tecnologías:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/TomasMedeot/Oniet" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Form Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Survey Form</h5>
+                                    <p class="card-text">Formulario con una encuesta sobre Free Code Camp.</p>
+                                    <p>Tecnologías:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
+                                    <a href="https://fcc-sf-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">Ver Proyecto</a></button>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Survey-Form" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-lg-4 px-5">
+                            <div class="card my-3">
+                                <img src="./assets/images/Tribute Project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tribute Page</h5>
+                                    <p class="card-text">Página tributo a Dr. Norman Borlaug, el hombre que salvó billones de personas.</p>
+                                    <p>Tecnologías:</p>
+                                    <ul class="w-75 p-0 d-flex justify-content-around">
+                                        <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
+                                        <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
+                                    </ul>
+                                    <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
+                                    <a href="https://fcc-tp-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">Ver Proyecto</a></button>
+                                    <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Tribute-Page" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="row effect row-contact">
+                        <div class="col-12 px-5">
+                            <h2 class="mb-4">Contacto</h2>
+                            <div class="row my-4">
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://github.com/Tomicaceres07" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/github.svg" alt="Github Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://www.linkedin.com/in/tomás-caceres-378a48173/" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/linkedin.svg" alt="Linkedin Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="https://t.me/Tomicaceres" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/telegram.svg" alt="Telegram Icon" width="30"></a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-3 mb-3">
+                                    <a href="mailto:tomicaceres07@gmail.com" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/gmail.svg" alt="Mail Icon" width="30"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black p-2 text-white text-center">
             <div class="container">
-                <div id="row-about" class="row effect">
-                    <div class="col-12 px-5 mt-3">
-                        <h2>Sobre Mi</h2>
-                        <hr>
-                        <h3>Quién soy?</h3>
-                        <p>Soy Tomás Caceres, un desarrollador web con muchas ganas de aprender algo nuevo cada día. Amo la tecnología y el avance constante. Estoy buscando un trabajo quepueda aprovechar mi potencial para seguir mejorando.</p>
-                        <a class="btn btn-primary d-block mx-auto" type="button" href="./assets/cv/curriculum-esp.pdf" target="_blank">Descargar CV</a>
-                        <hr>
+                <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <p class="d-block m-0 m-sm-auto p-2 pb-1">Desarrollado con <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                        </svg></span> por Tomás Caceres 2022.</p>
+                    </div>
+                    <div class="col-12 col-sm-4 order-first order-sm-last">
+                        <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="portfolio">
-            <div class="container">
-                <div class="row effect row-portfolio">
-                    <div class="col px-5">
-                        <h2>Proyectos</h2>
-                    </div>
-                </div>
-                <div class="row effect row-portfolio">
-                    <div class="col px-5">
-                        <div class="card my-3">
-                            <img src="./assets/images/Liceo Project.png" class="card-img-top" alt="Proyecto Liceo">
-                            <div class="card-body">
-                                <h5 class="card-title">Aplicación Web LMGP</h5>
-                                <p class="card-text">Es una aplicación pensada para el colegio Liceo Militar General Paz de Córdoba y busca facilitar la comunicación de Alumnos, Profesores y Directores.</p>
-                                <p>Tecnologías:</p>
-                                <ul class="w-75 p-0 d-flex justify-content-around">
-                                    <img class="technology" data-toggle="tooltip" title="React" src="./assets/images/react.svg" alt="React Icon">
-                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
-                                </ul>
-                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/AsusGho-Frontend" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col px-5">
-                        <div class="card my-3">
-                            <img src="./assets/images/Portfolio Project.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Portafolio</h5>
-                                <p class="card-text">Es esta misma página. Muestro quién soy, qué proyectos hice y cómo me pueden contactar.</p>
-                                <p>Tecnologías:</p>
-                                <ul class="w-75 p-0 d-flex justify-content-around">
-                                    <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 4" src="./assets/images/bootstrap-4.svg" alt="Bootstrap 4 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="SASS" src="./assets/images/sass.svg" alt="SASS Icon">
-                                    <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
-                                </ul>
-                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Portafolio" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col px-5">
-                        <div class="card my-3">
-                            <img src="./assets/images/Oniet Project.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">HotSpot - ONIET</h5>
-                                <p class="card-text">Es un sistema que administra clientes conectados a una red wifi, y con los datos del cliente calcular estadísticas.</p>
-                                <p>Tecnologías:</p>
-                                <ul class="w-75 p-0 d-flex justify-content-around">
-                                    <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="Bootstrap 5" src="./assets/images/bootstrap-5.svg" alt="Bootstrap 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="JavaScript" src="./assets/images/js.svg" alt="JavaScript Icon">
-                                </ul>
-                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/TomasMedeot/Oniet" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-4 px-5">
-                        <div class="card my-3">
-                            <img src="./assets/images/Form Project.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Survey Form</h5>
-                                <p class="card-text">Formulario con una encuesta sobre Free Code Camp.</p>
-                                <p>Tecnologías:</p>
-                                <ul class="w-75 p-0 d-flex justify-content-around">
-                                    <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
-                                </ul>
-                                <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
-                                <a href="https://fcc-sf-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">Ver Proyecto</a></button>
-                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Survey-Form" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 col-lg-4 px-5">
-                        <div class="card my-3">
-                            <img src="./assets/images/Tribute Project.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Tribute Page</h5>
-                                <p class="card-text">Página tributo a Dr. Norman Borlaug, el hombre que salvó billones de personas.</p>
-                                <p>Tecnologías:</p>
-                                <ul class="w-75 p-0 d-flex justify-content-around">
-                                    <img class="technology" data-toggle="tooltip" title="HTML 5" src="./assets/images/html.svg" alt="HTML 5 Icon">
-                                    <img class="technology" data-toggle="tooltip" title="CSS 3" src="./assets/images/css.svg" alt="CSS 3 Icon">
-                                </ul>
-                                <button type="button" class="btn btn-primary mb-2 d-block mx-auto"><span class="icon-globe"></span> 
-                                <a href="https://fcc-tp-tc.netlify.app/" class="text-white text-decoration-none" target="_blank">Ver Proyecto</a></button>
-                                <button type="button" class="btn btn-secondary d-block mx-auto"><span class="icon-github-circled"></span><a href="https://github.com/Tomicaceres07/Tribute-Page" class="text-white text-decoration-none" target="_blank">Repositorio</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <div class="row effect row-contact">
-                    <div class="col-12 px-5">
-                        <h2 class="mb-4">Contacto</h2>
-                        <div class="row my-4">
-                            <div class="col-6 col-sm-4 col-md-3 mb-3">
-                                <a href="https://github.com/Tomicaceres07" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/github.svg" alt="Github Icon" width="30"></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-md-3 mb-3">
-                                <a href="https://www.linkedin.com/in/tomás-caceres-378a48173/" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/linkedin.svg" alt="Linkedin Icon" width="30"></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-md-3 mb-3">
-                                <a href="https://t.me/Tomicaceres" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/telegram.svg" alt="Telegram Icon" width="30"></a>
-                            </div>
-                            <div class="col-6 col-sm-4 col-md-3 mb-3">
-                                <a href="mailto:tomicaceres07@gmail.com" class="btn btn-contact d-block w-100 h-100 mx-auto" target="_blank"><img src="./assets/images/gmail.svg" alt="Mail Icon" width="30"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-black p-2 text-white text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-8">
-                    <p class="d-block m-0 m-sm-auto p-2 pb-1">Todos los derechos reservados &copy; 2022.</p>
-                </div>
-                <div class="col-12 col-sm-4 order-first order-sm-last">
-                    <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
