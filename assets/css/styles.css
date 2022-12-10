@@ -1,7 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-/* html {
-    scroll-behavior: smooth;
-} */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -98,7 +99,7 @@ hr {
   transition: all 0.5s ease;
 }
 
-#toggle {
+.toggle {
   border: 1px solid white;
 }
 
@@ -106,7 +107,7 @@ hr {
   border-bottom: 1px solid white;
 }
 
-#home {
+.home {
   background-image: url("../images/background-code.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -114,7 +115,7 @@ hr {
   background-position: 7%;
 }
 
-#home:before {
+.home:before {
   content: "";
   width: 100%;
   height: 100vh;
@@ -122,12 +123,12 @@ hr {
   position: absolute;
 }
 
-#profile_picture {
+.profile_picture {
   max-width: 100%;
   width: 240px;
 }
 
-#logo:hover {
+.logo:hover {
   animation: pulse;
   animation-duration: 1s;
 }
@@ -183,30 +184,30 @@ hr {
   width: 35px;
 }
 
-#arrow_up,
-#arrow_down {
+.arrow_up,
+.arrow_down {
   font-size: 1.5em;
 }
 
-#down {
+.down {
   position: relative;
   top: 3em;
 }
 
 @media (min-width: 576px) {
-  #text-home {
+  .text-home {
     font-size: 18px;
   }
-  #arrow_up {
+  .arrow_up {
     padding: 0.2em !important;
     font-size: 1.5em;
   }
 }
 @media (min-width: 768px) {
-  #profile_picture {
+  .profile_picture {
     float: right;
   }
-  #text-home {
+  .text-home {
     display: block;
     margin: auto 0px;
     font-size: 18px;
@@ -214,7 +215,7 @@ hr {
   .nav-item {
     border: none;
   }
-  #down {
+  .down {
     position: relative;
     top: 7em;
   }
@@ -223,7 +224,7 @@ hr {
   }
 }
 @media (min-width: 992px) {
-  #text-home {
+  .text-home {
     font-size: 24px;
   }
   .btn-contact {
@@ -231,7 +232,7 @@ hr {
   }
 }
 @media (min-width: 1200px) {
-  #home {
+  .home {
     background-size: 100% 100%;
   }
 }

@@ -19,20 +19,20 @@
         <header>
             <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
                 <div class="container-fluid text-center animate__animated animate__fadeInDown">
-                    <a id="logo" href="#home" class="navbar-brand">
+                    <a href="#home" class="navbar-brand logo">
                         <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
                     </a>
 
-                    <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
+                    <button type="button" class="navbar-toggler toggle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="menu">
                         <ul id="menu-list" class="navbar-nav ml-auto">
-                            <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Home</a></li>
-                            <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">About Me</a></li>
-                            <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Projects</a></li>
-                            <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contact</a></li>
+                            <li class="li_home nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Home</a></li>
+                            <li class="li_about nav-item py-2"><a id="a_about" class="nav-link" href="#about">About Me</a></li>
+                            <li class="li_portfolio nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Projects</a></li>
+                            <li class="li_contact nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contact</a></li>
                             <li class="li_language px-4">
                                 <span class="en"><img class="flag" src="./assets/images/Flag of the United States.svg" alt="USA Flag"></span>
                                 <input type="checkbox" id="check" class="check">
@@ -44,29 +44,29 @@
             </nav>
         </header>
         <main>
-            <section id="home">
+            <section id="home" class="home">
                 <div class="container">
                     <div class="row vh-100 align-content-center">
                         <!-- Foto -->
                         <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
-                            <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                            <img class="rounded-circle profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
                         </div>
                         <!-- Textos -->
-                        <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
+                        <div class="text-home col-12 col-md-6  text-center animate__animated animate__fadeInDown">
                             <h3 class="text-white">Hi! I'm</h3>
                             <h1 class="text-primary ">Tomás Caceres</h1>
                             <h3 class="text-white">FullStack Developer</h3>
                         </div>
                         <!-- Botón para ir al about -->
                         <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
-                            <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
+                            <a href="#about" class="down w-auto p-1"><span class="arrow_down icon-down-2 bg-white border rounded-circle"></span></a>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="about">
                 <div class="container">
-                    <div id="row-about" class="row effect">
+                    <div class="row-about row effect">
                         <div class="col-12 px-5 mt-3">
                             <h2>About Me</h2>
                             <hr>
@@ -210,7 +210,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-sm-4 order-first order-sm-last">
-                        <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
+                        <a href="#home" class="up d-block w-auto mx-auto p-1"><span class="arrow_up icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
                     </div>
                 </div>
             </div>
@@ -220,20 +220,20 @@
         <header>
             <nav id="nav" class="navbar navbar-dark navbar-expand-md  fixed-top background-rgba">
                 <div class="container-fluid text-center animate__animated animate__fadeInDown">
-                    <a id="logo" href="#home" class="navbar-brand">
+                    <a href="#home-spa" class="navbar-brand logo">
                         <img src="assets/images/logo3dark.png" alt="Logo TC" width="100" height="auto">
                     </a>
 
-                    <button id="toggle" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
+                    <button type="button" class="navbar-toggler toggle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Display menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="menu">
                         <ul id="menu-list" class="navbar-nav ml-auto">
-                            <li id="li_home" class="nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home">Inicio</a></li>
-                            <li id="li_about" class="nav-item py-2"><a id="a_about" class="nav-link" href="#about">Sobre Mi</a></li>
-                            <li id="li_portfolio" class="nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio">Proyectos</a></li>
-                            <li id="li_contact" class="nav-item py-2"><a id="a_contact" class="nav-link" href="#contact">Contacto</a></li>
+                            <li class="li_home-spa nav-item item-list py-2 active"><a id="a_home" class="nav-link" href="#home-spa">Inicio</a></li>
+                            <li class="li_about-spa nav-item py-2"><a id="a_about" class="nav-link" href="#about-spa">Sobre Mi</a></li>
+                            <li class="li_portfolio-spa nav-item py-2"><a id="a_portfolio" class="nav-link" href="#portfolio-spa">Proyectos</a></li>
+                            <li class="li_contact-spa nav-item py-2"><a id="a_contact" class="nav-link" href="#contact-spa">Contacto</a></li>
                             <li class="li_language px-4">
                                 <span class="en"><img class="flag" src="./assets/images/Flag of the United States.svg" alt="USA Flag"></span>
                                 <input type="checkbox" id="check" class="check">
@@ -245,29 +245,29 @@
             </nav>
         </header>
         <main>
-            <section id="home">
+            <section id="home-spa" class="home">
                 <div class="container">
                     <div class="row vh-100 align-content-center">
                         <!-- Foto -->
                         <div class="col-12 col-md-6 text-center mb-5 animate__animated animate__backInLeft">
-                            <img class="rounded-circle" id="profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
+                            <img class="rounded-circle profile_picture" src="./assets/images/foto_perfil.jpg" alt="Profile Picture">
                         </div>
                         <!-- Textos -->
-                        <div id="text-home" class="col-12 col-md-6  text-center animate__animated animate__fadeInDown">
+                        <div class="text-home col-12 col-md-6  text-center animate__animated animate__fadeInDown">
                             <h3 class="text-white">Hola! Yo Soy</h3>
                             <h1 class="text-primary ">Tomás Caceres</h1>
                             <h3 class="text-white">Desarrollador FullStack</h3>
                         </div>
                         <!-- Botón para ir al about -->
                         <div class="col-12 text-center animate__animated animate__pulse animate__infinite animate__delay-2s">
-                            <a id="down" href="#about" class="w-auto p-1"><span id="arrow_down" class="icon-down-2 bg-white border rounded-circle"></span></a>
+                            <a href="#about-spa" class="down w-auto p-1"><span class="arrow_down icon-down-2 bg-white border rounded-circle"></span></a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="about">
+            <section id="about-spa">
                 <div class="container">
-                    <div id="row-about" class="row">
+                    <div class="row-about row">
                         <div class="col-12 px-5 mt-3">
                             <h2>Sobre Mi</h2>
                             <hr>
@@ -279,7 +279,7 @@
                     </div>
                 </div>
             </section>
-            <section id="portfolio">
+            <section id="portfolio-spa">
                 <div class="container">
                     <div class="row effect row-portfolio">
                         <div class="col px-5">
@@ -373,7 +373,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section id="contact-spa">
                 <div class="container">
                     <div class="row effect row-contact">
                         <div class="col-12 px-5">
@@ -406,7 +406,7 @@
                         </svg></span> por Tomás Caceres 2022.</p>
                     </div>
                     <div class="col-12 col-sm-4 order-first order-sm-last">
-                        <a id="up" href="#home" class="d-block w-auto mx-auto p-1"><span id="arrow_up" class="icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
+                        <a href="#home" class="up d-block w-auto mx-auto p-1"><span class="arrow_up icon-up-2 d-inline-block mx-auto bg-white border rounded-circle animate__animated animate__pulse animate__infinite"></span></a>
                     </div>
                 </div>
             </div>
